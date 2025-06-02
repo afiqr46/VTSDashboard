@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afiq Rahimi Vehicle Tracker</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+    .value {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🚗 Afiq Rahimi Vehicle Tracker</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>📍 Current Location</h2>
+    <div class="value">Latitude: <span class="label">2.276552</span></div>
+    <div class="value">Longitude: <span class="label">102.319443</span></div>
+  </div>
+
+  <div class="card">
+    <h2>📡 GPS & Tracking Status</h2>
+    <div class="value">Tracking: <span class="label">🟢 ON</span></div>
+    <div class="value">GPS Signal: <span class="label">📶 Strong</span></div>
+    <div class="value">Satellites: <span class="label">6</span></div>
+  </div>
+
+  <div class="card">
+    <h2>⏱️ Uptime</h2>
+    <div class="value">0h 15m 23s</div>
+  </div>
+
+  <div class="card">
+    <h2>📈 Movement History</h2>
+    <ul>
+      <li>1. Parked at UTeM for 1 hour</li>
+      <li>2. Moved to Bukit Tambun</li>
+      <li>3. Parked at Melaka Sentral</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Optional auto-refresh every 10s -->
+<script>
+  setTimeout(() => location.reload(), 10000);
+</script>
+
+</body>
+</html>
